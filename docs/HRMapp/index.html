@@ -1,0 +1,39 @@
+<!-- HTML, giao diện chính-->
+ <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HRM App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     <header>
+        <h1> Taro HRM Companny. </h1>
+        <nav> <!--thẻ nav để điều hướng-->
+            <ul>
+                <!-- dấu # để dẫn tới đúng vị trí id trong app, tránh bị chuyển trang-->
+             <li><a href="#" data-page="employee">Nhân viên</a></li>
+             <li><a href="#" data-page="department">Phòng ban</a></li>
+             <li><a href="#" data-page="salary">Lương</a></li>
+             <li><a href="#" data-page="attendance">Điểm danh</a></li>
+             <li><a href="#" data-page="leave">Nghỉ phép</a></li>
+             <li><a href="#" data-page="performance">Hiệu suất</a></li>
+            </ul>
+        </nav>
+        <div id="app"></div>
+     </header>  
+     <main id="content">
+        <!-- Nội dung động sẽ được tải ở đây -->
+         <!-- nơi sẽ truyền tải nội dung chính từ js vào -->
+         <section id="dashboard">
+         <h2>Chào mừng đến với Hệ thống Quản lý Nhân sự</h2>
+         <p>Hãy chọn một chức năng trong menu để bắt đầu.</p>
+         </section>
+     </main>
+     <footer>
+        <p> App by Tran Quang Ha Companny </p>
+     </footer>
+     <script type="Module" src="app.js" ></script>
+    </body>
+    </html>
